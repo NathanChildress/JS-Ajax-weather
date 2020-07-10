@@ -1,6 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 input:invalid {
     border: red solid 3px;
   }
+
+body {
+    min-height: 100vh;
+}
 
 /* .visible {
 
