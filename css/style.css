@@ -8,12 +8,30 @@ input:invalid {
 
 body {
     min-height: 100vh;
+    background-color: aquamarine;
 }
 
-/* .visible {
+#weatherInfo {
+text-align: center;
 
-}
 
-.hidden {
     
-} */
+}
+
+.foreColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.hideMe {
+    visibility: hidden;
+}
+
+.showMe {
+    visibility: visible;
+}
+

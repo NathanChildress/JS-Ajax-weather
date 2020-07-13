@@ -4,19 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajax Weather Lab</title>
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Minified JQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     
     <!-- local CSS -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -26,18 +19,9 @@
 
 </head>
 <body>
-    <nav> 
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Weather Web</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
-        </div>
-      </nav>
 
-    <h1>Weather Info</h1>
+<div id="weatherInfo">
+    <h2>Weather Info</h1>
     <form>
         <input type="text" pattern="[0-9]{5}"" placeholder="Enter the 5 digit Zip">
         <input type="submit" value="Get Weather Info">
@@ -54,9 +38,14 @@
         <p id="feels"></p>
         <h3>Weather:</h3>
         <p id="weather"></p>
-        <img id="weatherIcon" src="" alt="weather">
+        <img id="weatherIcon" class="hideMe" src="" alt="weather">
     </main>
-    <footer class="page-footer"></footer>
+    <div class="container foreColumn">
+
+    </div>
+    
+</div>
+
 
 </body>
 </html>
